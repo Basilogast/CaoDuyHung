@@ -10,11 +10,28 @@ jobs:
     runs-on: ubuntu-latest
     container: node:16
     steps:
-      - run: node --version
-      - run: npm --version
-      - uses: action/checkout@v3
-      - run: npm install
-      - run: node server.js
+      - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16' # Specify your Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Tests
+      run: npm test # Assumes you have tests defined in your project
+
+    - name: Build Project
+      run: npm run build # Use if you have a build step (e.g., for React or other front-end build)
+
+    - name: Deploy to Server
+      env:
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
+        EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+      run: node server.js
       
   build:
     name: Build
