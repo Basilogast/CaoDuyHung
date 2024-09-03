@@ -19,6 +19,7 @@ import p1 from "../assets/img/paralax/paralax__0001_front-building-6.png";
 import p0 from "../assets/img/paralax/paralax__0000_smoke-upper-front-8.png";
 import { useEffect } from "react";
 import {Hovering} from "./Hovering";
+import TrackVisibility from 'react-on-screen';
 
 export const Parallax = () => {
 
@@ -55,7 +56,9 @@ export const Parallax = () => {
     },[]);//useEffect run everytime when changes happen => add [] to know that it only run when rendered
 
     return (
-        <main>
+        <TrackVisibility>
+        {({ isVisible }) =>
+        <main className={isVisible ? "animate__animated animate__fadeIn" : ""}>
             <img src={p17} data-speedx="0.3" data-speedy="0.38" data-zvalue="0" alt="background" className="parallax background" />
             <img src={p16} data-speedx="0.25" data-speedy="0.25" data-zvalue="0" alt="skylight" className="parallax skylight" />
             <img src={p15} data-speedx="0.25" data-speedy="0.25" data-zvalue="0" alt="skylight" className="parallax skylight" />
@@ -74,6 +77,8 @@ export const Parallax = () => {
             <img src={p2} data-speedx="0.13" data-speedy="0.115" data-zvalue="-1" alt="smoke" className="parallax smoke" />
             <img src={p1} data-speedx="0.045" data-speedy="0.035" data-zvalue="1" alt="building" className="parallax building" />
             <img src={p0} data-speedx="0.1" data-speedy="0.09" data-zvalue="1" alt="smoke" className="parallax smoke" />
-        </main>
+        </main>}
+        </TrackVisibility>
+        
     )
 }
