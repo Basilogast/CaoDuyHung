@@ -6,6 +6,16 @@ on:
       - main
 
 jobs:
+  build-node:
+    runs-on: ubuntu-latest
+    container: node:16
+    steps:
+      - run: node --version
+      - run: npm --version
+      - uses: action/checkout@v3
+      - run: npm install
+      - run: node server.js
+      
   build:
     name: Build
     runs-on: ubuntu-latest
