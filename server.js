@@ -1,7 +1,8 @@
-const express = require("express");
+import express from "express";
+import cors from "cors";
+import nodemailer from "nodemailer";
+
 const router = express.Router();
-const cors = require("cors");
-const nodemailer = require("nodemailer");
 
 // server used to send send emails
 const app = express();
