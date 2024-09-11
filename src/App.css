@@ -528,10 +528,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 } */
 /* tech */
 .tech {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .techIcon {
-  width: 125px;
+  width: 150px; /* Default width */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1200px) {
+  .techIcon {
+    width: 5rem;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .techIcon {
+    width: 50px;
+  }
 }
 /* fuzzy overlay */
 .fuzzy-overlay {
@@ -993,7 +1007,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 0;
   padding: 0 15px;
 }
-.new-email-bx button {
+.buttonLetter {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   padding: 20px 65px;
   color: #fff;

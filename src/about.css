@@ -11,7 +11,7 @@ html {
 
 @media (max-width: 900px) {
   .swipeContainer {
-    zoom: 0.8;
+    zoom: 0.5;
   }
 }
 
