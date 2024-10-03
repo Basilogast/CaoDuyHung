@@ -22,11 +22,11 @@ const Ball = (props) => {
 
       // Adjust scale based on screen width
       if (width < 600) {
-        setBallScale(2); // Smaller scale for mobile screens
+        setBallScale(1); // Smaller scale for mobile screens
       } else if (width < 1200) {
-        setBallScale(2.5); // Medium scale for tablets
+        setBallScale(1.5); // Medium scale for tablets
       } else {
-        setBallScale(3); // Default scale for larger screens
+        setBallScale(2); // Default scale for larger screens
       }
     };
 

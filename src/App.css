@@ -20,6 +20,18 @@
   font-weight: 500;
 }
 
+@font-face {
+  font-family: Chewy;
+  src: url("./assets/font/Chewy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: LuckiestGuy;
+  src: url("./assets/font/LuckiestGuy-Regular.ttf");
+  font-weight: 400;
+}
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -147,6 +159,21 @@ p.danger {
   padding: 10px 30px;
   border: 2px solid #1dd4e182;
 }
+.about .textBox span{
+  color: #5ce1e6;
+}
+.about .swiper-slide img {
+  border: 5px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.7), 0 0 45px rgba(128, 0, 128, 0.5);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.about .swiper-slide img:hover {
+  border-color: rgba(128, 0, 128, 1); /* Purple neon border */
+  box-shadow: 0 0 25px rgba(128, 0, 128, 1), 0 0 55px rgba(128, 0, 128, 1);
+}
+
 /************ Parallax ************/
 main {
   background-color: purple;
@@ -359,12 +386,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 15px;
+  font-size: 80px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  font-family: "Chewy", sans-serif;
+}
+.banner h1 span {
+  font-family: "LuckiestGuy", sans-serif;
+  color: #5ce1e6;
 }
 .banner .creativeImg {
   width: 80%;
@@ -378,11 +410,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
   font-weight: 400;
 }
+.banner p span {
+  font-family: "LuckiestGuy", sans-serif;
+  font-size: 30px;
+}
 .banner hr.myHr {
-  width: 35%;
+  width: 60%;
   background-color: white;
-  height: 2px;
-  margin: 3px;
+  height: 1px;
+  margin: 1px;
+  opacity: 1;
 }
 .banner button {
   color: #fff;
@@ -409,9 +446,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner .bannerImg {
   animation: updown 3s linear infinite;
   position: relative;
-  top: -80px;
-  left: -30px;
-  width: 120%;
+  top: -50px;
+  /* left: -30px; */
+  width: 100%;
 }
 
 @keyframes updown {
@@ -429,7 +466,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-decoration: none;
   color: white;
   align-items: center;
-  width: 80%;
+  width: 50%;
   padding: 15px 20px;
   margin-top: 20px;
   border-radius: 20px;
@@ -452,6 +489,63 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+/* Default styles for large screens */
+/* Medium screens (md) */
+@media (max-width: 992px) {
+  .banner h1 {
+    font-size: 60px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .banner button {
+    font-size: 18px;
+  }
+  .explorebox {
+    width: 60%;
+  }
+}
+
+/* Small screens (sm) */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 12px;
+  }
+
+  .banner button {
+    font-size: 16px;
+  }
+  .explorebox {
+    width: 80%;
+  }
+}
+
+/* Extra small screens (xs) */
+@media (max-width: 576px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+  .banner h1 .txt-rotate {
+    display: block;
+  }
+  .banner p {
+    font-size: 10px;
+  }
+
+  .banner button {
+    font-size: 14px;
+  }
+  .explorebox {
+    width: 80%;
+  }
 }
 
 /************ works Css ************/
@@ -945,7 +1039,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     right: 0;
   }
 }
-
 
 /************ Footer Css ************/
 .footer {

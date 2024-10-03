@@ -10,13 +10,13 @@ import "../about.css";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
-import slide_image_2 from "../assets/img/aboutImg/img_1.jpg";
-import slide_image_1 from "../assets/img/aboutImg/img_2.jpg";
-import slide_image_3 from "../assets/img/aboutImg/img_3.jpg";
-import slide_image_4 from "../assets/img/aboutImg/img_4.jpg";
-import slide_image_5 from "../assets/img/aboutImg/img_5.jpg";
-import slide_image_6 from "../assets/img/aboutImg/img_6.jpg";
-import slide_image_7 from "../assets/img/aboutImg/img_7.jpg";
+import slide_image_1 from "../assets/img/aboutImg/1.jpg";
+import slide_image_2 from "../assets/img/aboutImg/2.jpg";
+import slide_image_3 from "../assets/img/aboutImg/3.jpg";
+import slide_image_4 from "../assets/img/aboutImg/4.jpg";
+import slide_image_5 from "../assets/img/aboutImg/5.jpg";
+import slide_image_6 from "../assets/img/aboutImg/6.jpg";
+import slide_image_7 from "../assets/img/aboutImg/7.jpg";
 
 import avatar from "../assets/img/aboutImg/avatar.png";
 import arrowright from "../assets/img/arrowright.png";
@@ -34,12 +34,14 @@ export const About = () => {
             <h2>HEY THERE!</h2>
             <div className="textBox flex-grow-1">
               <p>
-                My name is Hung, and I’m a freelance web designer and developer
-                with a passion for creating beautiful, functional websites.
+                My name is Hung, and I’m a freelance web designer and developer.
+                I can create your DREAM website and host it for{" "}
+                <span>FREE</span>.
               </p>
               <p>
-                If you're looking for a website that stands out, feel free to
-                reach out – None of the penny you spend will be a disappointment
+                So you can get your Website running <span>FOREVER</span> with
+                just <span>One-Time Payment</span>. No monthly hosting fee in
+                the future.
               </p>
             </div>
           </Col>

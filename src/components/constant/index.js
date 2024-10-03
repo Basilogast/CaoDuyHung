@@ -12,7 +12,9 @@ import git from "../../assets/tech/git.png"
 import figma from "../../assets/tech/figma.png"
 import docker from "../../assets/tech/docker.png"
 
-import work1 from "../../assets/works/work1.jpg"
+import work1 from "../../assets/works/work1.png"
+import work2 from "../../assets/works/work2.png"
+import work3 from "../../assets/works/work3.png"
 
 import piano from "../../assets/img/piano.png";
 import todo from "../../assets/img/todo.png";
@@ -77,53 +79,25 @@ const technologies = [
 
 const cards = [
   {
-    projectName: "PROJECT ABC NIENIDNI1",
+    projectName: "ACCOUNT EXECUTIVE'S PERSONAL PORTFOLIO",
     number: "001",
-    link: "https://www.google.com.vn/",
-    description: "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iinterdum vestibulum ex, ut posuere nunc viverra necPellentesque ex urna, rutrum nec sodales sed, efficitur sit ameex. Fusce et ex id leo facilisis finibus a at erat. Suspendis potenti. Integer varius, justo eu posuere tempus, massa odivenenatis ligula, non lacinia ligula lectus in nisi. Curabsit amet mattis ex. Duis vitae semper diam, at suscipit enim.",
+    link: "https://basilogast.github.io/NguyenDoThienAn/",
+    description: "A personal portfolio for an account executive to display her projects for future employers",
     img: work1,
   },
   {
-    projectName: "PROJECT ABC NIENIDNI2",
+    projectName: "FTU2 GRADUATE'S PERSONAL PORTFOLIO",
     number: "002",
-    link: "google.com",
-    description: "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iinterdum vestibulum ex, ut posuere nunc viverra necPellentesque ex urna, rutrum nec sodales sed, efficitur sit ameex. Fusce et ex id leo facilisis finibus a at erat. Suspendis potenti. Integer varius, justo eu posuere tempus, massa odivenenatis ligula, non lacinia ligula lectus in nisi. Curabsit amet mattis ex. Duis vitae semper diam, at suscipit enim.",
-    img: work1,
+    link: "https://basilogast.github.io/NguyenQuynhAnhThu/",
+    description: "A personal portfolio for a graduate to store her dedicated work for future applications",
+    img: work2,
   },
   {
-    projectName: "PROJECT ABC NIENIDNI3",
+    projectName: "IT INTERN PERSONAL PORTFOLIO",
     number: "003",
-    link: "google.com",
-    description: "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iinterdum vestibulum ex, ut posuere nunc viverra necPellentesque ex urna, rutrum nec sodales sed, efficitur sit ameex. Fusce et ex id leo facilisis finibus a at erat. Suspendis potenti. Integer varius, justo eu posuere tempus, massa odivenenatis ligula, non lacinia ligula lectus in nisi. Curabsit amet mattis ex. Duis vitae semper diam, at suscipit enim.",
-    img: work1,
-  },
-  {
-    projectName: "PROJECT ABC NIENIDNI4",
-    number: "003",
-    link: "google.com",
-    description: "4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iinterdum vestibulum ex, ut posuere nunc viverra necPellentesque ex urna, rutrum nec sodales sed, efficitur sit ameex. Fusce et ex id leo facilisis finibus a at erat. Suspendis potenti. Integer varius, justo eu posuere tempus, massa odivenenatis ligula, non lacinia ligula lectus in nisi. Curabsit amet mattis ex. Duis vitae semper diam, at suscipit enim.",
-    img: work1,
-  },
-  {
-    projectName: "PROJECT ABC NIENIDNI5",
-    number: "003",
-    link: "google.com",
-    description: "5Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iinterdum vestibulum ex, ut posuere nunc viverra necPellentesque ex urna, rutrum nec sodales sed, efficitur sit ameex. Fusce et ex id leo facilisis finibus a at erat. Suspendis potenti. Integer varius, justo eu posuere tempus, massa odivenenatis ligula, non lacinia ligula lectus in nisi. Curabsit amet mattis ex. Duis vitae semper diam, at suscipit enim.",
-    img: work1,
-  },
-  {
-    projectName: "PROJECT ABC NIENIDNI6",
-    number: "003",
-    link: "google.com",
-    description: "6Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iinterdum vestibulum ex, ut posuere nunc viverra necPellentesque ex urna, rutrum nec sodales sed, efficitur sit ameex. Fusce et ex id leo facilisis finibus a at erat. Suspendis potenti. Integer varius, justo eu posuere tempus, massa odivenenatis ligula, non lacinia ligula lectus in nisi. Curabsit amet mattis ex. Duis vitae semper diam, at suscipit enim.",
-    img: work1,
-  },
-  {
-    projectName: "PROJECT ABC NIENIDNI7",
-    number: "003",
-    link: "google.com",
-    description: "7Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iinterdum vestibulum ex, ut posuere nunc viverra necPellentesque ex urna, rutrum nec sodales sed, efficitur sit ameex. Fusce et ex id leo facilisis finibus a at erat. Suspendis potenti. Integer varius, justo eu posuere tempus, massa odivenenatis ligula, non lacinia ligula lectus in nisi. Curabsit amet mattis ex. Duis vitae semper diam, at suscipit enim.",
-    img: work1,
+    link: "https://basilogast.github.io/DuyHungPortfolio/",
+    description: "A portfolio that helps an IT intern to get his dream job",
+    img: work3,
   },
 ];
 

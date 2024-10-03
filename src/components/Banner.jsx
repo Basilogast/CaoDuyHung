@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.png";
+import headerImg from "../assets/img/heroImg2.0.png";
 import creative from "../assets/img/creative.png";
 import threearrow from "../assets/img/threearrow2.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -69,84 +69,58 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Hovering left="80" top="45" img="p0" widthPara="80px"></Hovering>
-      <Hovering left="85" top="45" img="p1" widthPara="80px"></Hovering>
-      <Hovering left="80" top="0" img="p2" widthPara="80px"></Hovering>
+      {/* <Hovering left="80" top="45" img="p0" widthPara="80px"></Hovering> */}
+      {/* <Hovering left="85" top="45" img="p1" widthPara="80px"></Hovering> */}
+      {/* <Hovering left="80" top="0" img="p2" widthPara="80px"></Hovering> */}
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div className="textContainer">
-                  <div
-                    className={
-                      isVisible ? "animate__animated animate__fadeIn" : ""
-                    }
-                  >
-                    {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                    <h1>
-                      {`I'm Hung, a `}{" "}
-                      <span
-                        className="txt-rotate"
-                        dataPeriod="1000"
-                        data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-                      >
-                        <span className="wrap">{text}</span>
-                      </span>
-                    </h1>
-                    <img
-                      className="creativeImg"
-                      src={creative}
-                      alt="Creative Img"
-                    />
-                    <div className="smallTextWrapper d-flex">
-                      <div>
-                        <p>{time}</p>
-                        <hr className="myHr"></hr>
-                        <p>"I bring idea out of your head"</p>
-                      </div>
-                      <a href="#connect" style={{textDecoration:"none", color:"white"}}>
-                        <button onClick={() => console.log("connect")}>
-                          Let's Connect <ArrowRightCircle size={25} />
-                        </button>
-                      </a>
-                    </div>
-                    <a
-                      className="explorebox bg-black border border-2 border-white d-flex justify-content-center"
-                      href="#work"
-                    >
-                      <div>
-                        <h2>EXPLORE</h2>
-                        <p>
-                          Explore the recent innovative and exceptional digital
-                          experiences
-                        </p>
-                      </div>
-                      <img src={threearrow} alt="Three arrow Img"></img>
-                    </a>
-                  </div>
+          <Col xs={12} md={5} xl={6}>
+            <div className="textContainer">
+              {/* <span className="tagline">Welcome to my Portfolio</span> */}
+              <h1>
+                {`I'm Hung, a `}{" "}
+                <span
+                  className="txt-rotate"
+                  dataPeriod="1000"
+                  data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                >
+                  <span className="wrap">{text}</span>
+                </span>
+              </h1>
+              <img className="creativeImg" src={creative} alt="Creative Img" />
+              <div className="smallTextWrapper d-flex" style={{width: "80%"}}>
+                <div>
+                  <p>{time}</p>
+                  <hr className="myHr"></hr>
+                  <p>"I bring idea out of your head"</p>
                 </div>
-              )}
-            </TrackVisibility>
+                <a
+                  href="#connect"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <button onClick={() => console.log("connect")}>
+                    Let's Connect <ArrowRightCircle size={25} />
+                  </button>
+                </a>
+              </div>
+              <a
+                className="explorebox bg-black border border-2 border-white d-flex justify-content-center"
+                href="#work"
+              >
+                <div>
+                  <h2>FANCY?</h2>
+                  <p>
+                    Just take a look at my recent projects to see what you can expect
+                  </p>
+                </div>
+                <img src={threearrow} alt="Three arrow Img"></img>
+              </a>
+            </div>
           </Col>
-          <Col xs={12} md={6} xl={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div className="bannerImgWrapper">
-                  <div
-                    className={
-                      isVisible ? "animate__animated animate__zoomIn" : ""
-                    }
-                  >
-                    <img
-                      className="bannerImg"
-                      src={headerImg}
-                      alt="Header Img"
-                    />
-                  </div>
-                </div>
-              )}
-            </TrackVisibility>
+          <Col xs={12} md={7} xl={6}>
+            <div className="bannerImgWrapper">
+              <img className="bannerImg" src={headerImg} alt="Header Img" />
+            </div>
           </Col>
         </Row>
       </Container>

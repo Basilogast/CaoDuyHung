@@ -8,7 +8,7 @@ export const Testimonials = () => {
     <section className="testimonial testimonial-container" id="testimonial">
       <div className="title">
         <h2>Testimonial</h2>
-        <p>What members are saying.</p>
+        <p>What others are saying.</p>
       </div>
 
       <div className="slider-container">

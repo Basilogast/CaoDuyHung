@@ -5,7 +5,7 @@ import useExternalScripts from './useExternalScripts';
 import "./base.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
+import { Banner2 } from "./components/Banner2";
 import {About} from "./components/About";
 // import { Skills } from "./components/Skills";
 // import { Projects } from "./components/Projects";
@@ -52,7 +52,7 @@ function App() {
       <div className="App">
       <Parallax />
       <NavBar />
-      <Banner />
+      <Banner2 />
       <About/>
       <Work />
       <Tech/>
