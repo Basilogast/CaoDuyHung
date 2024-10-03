@@ -89,13 +89,15 @@ export const Banner2 = () => {
           >
             Don’t know how to start, let me guide you!
           </p>
-          <button>
-            START HERE <ArrowRightCircle size={25} />
-          </button>
+          <a href="#connect" style={{ textDecoration: "none" }}>
+            <button>
+              LET'S CONNECT <ArrowRightCircle size={25} />
+            </button>
+          </a>
           <a
             className="explorebox bg-black border border-2 border-white d-flex justify-content-center"
             href="#work"
-            style={{marginTop: "50px"}}
+            style={{ marginTop: "50px" }}
           >
             <div>
               <h2>FANCY?</h2>
