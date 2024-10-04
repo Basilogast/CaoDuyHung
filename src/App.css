@@ -144,6 +144,29 @@ p.success {
 p.danger {
   color: red;
 }
+/************ Loading Css ************/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; /* Background color of the preloader screen */
+  z-index: 9999;
+}
+
+.App {
+  opacity: 0; /* Hide the app until loaded */
+  transition: opacity 1s ease-in-out;
+}
+
+.App.loaded {
+  opacity: 1; /* Fade in once loaded */
+}
+
 
 /************ About Css ************/
 .about {
