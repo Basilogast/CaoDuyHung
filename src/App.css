@@ -159,12 +159,12 @@ p.danger {
 }
 
 .App {
-  opacity: 0; /* Hide the app until loaded */
-  transition: opacity 1s ease-in-out;
+  /* opacity: 0; */
+  /* transition: opacity 1s ease-in-out; */
 }
 
 .App.loaded {
-  opacity: 1; /* Fade in once loaded */
+  /* opacity: 1; */
 }
 
 

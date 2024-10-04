@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import useExternalScripts from "./useExternalScripts";
 import "./base.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/NavBar";
@@ -28,23 +27,36 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // External script loading
-  const scriptUrl2 = "./imageReveal/js/demo.js";
-  const scriptUrl3 = "./imageReveal/js/charming.min.js";
-  const scriptUrl4 = "./imageReveal/js/imagesloaded.pkgd.min.js";
-  const scriptUrl5 = "./imageReveal/js/TweenMax.min.js";
+  // Load external scripts after loading finishes
+  useEffect(() => {
+    if (!loading) {
+      const scriptUrls = [
+        "./imageReveal/js/charming.min.js",
+        "./imageReveal/js/imagesloaded.pkgd.min.js",
+        "./imageReveal/js/TweenMax.min.js",
+        "./imageReveal/js/demo.js"
+      ];
 
-  useExternalScripts({ url: scriptUrl3 });
-  useExternalScripts({ url: scriptUrl4 });
-  useExternalScripts({ url: scriptUrl5 });
-  useExternalScripts({ url: scriptUrl2 });
+      scriptUrls.forEach((url) => {
+        const script = document.createElement("script");
+        script.src = url;
+        script.defer = true;
+        document.head.appendChild(script);
+
+        // Cleanup script when the component is unmounted
+        return () => {
+          document.head.removeChild(script);
+        };
+      });
+    }
+  }, [loading]);
 
   return (
     <>
       {loading && (
         // Preloader Spinner with DotLoader and purple color
         <div className="preloader">
-          <DotLoader color={"#800080"} loading={loading} size={60} />
+          <DotLoader color={"#800080"} loading={loading} size={200} />
         </div>
       )}
 
