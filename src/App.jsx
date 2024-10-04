@@ -7,6 +7,7 @@ import { Banner2 } from "./components/Banner2";
 import { About } from "./components/About";
 import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
+import {Pricing} from "./components/Pricing";
 import { Footer } from "./components/Footer";
 import { Parallax } from "./components/Parallax";
 import { Work } from "./components/Work";
@@ -70,6 +71,7 @@ function App() {
             <Work />
             <Tech />
             <Testimonials />
+            <Pricing/>
             <Contact />
             <Footer />
           </>

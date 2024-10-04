@@ -87,7 +87,7 @@ export const Banner2 = () => {
               paddingTop: "10px",
             }}
           >
-            Don’t know how to start, let me guide you!
+            Don’t know how to start, just give me a message!
           </p>
           <a href="#connect" style={{ textDecoration: "none" }}>
             <button>

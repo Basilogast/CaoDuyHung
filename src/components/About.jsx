@@ -24,7 +24,7 @@ import arrowleft from "../assets/img/arrowleft.png";
 
 export const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={5} xl={3}>

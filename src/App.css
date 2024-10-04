@@ -159,12 +159,11 @@ p.danger {
 }
 
 .App {
-  /* opacity: 0; */
-  /* transition: opacity 1s ease-in-out; */
+  opacity: 0; 
+  transition: opacity 1s ease-in-out;
 }
-
 .App.loaded {
-  /* opacity: 1; */
+  opacity: 1;
 }
 
 
@@ -1062,6 +1061,86 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     right: 0;
   }
 }
+/************ Pricing Css ************/
+/* Container for the pricing cards */
+.pricing-container {
+  text-align: center;
+  padding: 50px 0px 100px 0px;
+  background-color: #121212;
+  /* min-height: 100vh; */
+}
+
+.pricing-header {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+/* Layout for the pricing cards */
+.pricing-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: #0f0f1d;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(194, 5, 194, 0.3), 0 0 40px rgba(255, 0, 230, 0.3);
+  color: #fff;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card hover effects */
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 50px rgba(128, 0, 255, 0.6);
+}
+
+/* Title styling for each card */
+.pricing-title {
+  font-size: 1.8rem;
+  color: #e100ff; /* Cyan */
+  margin-bottom: 15px;
+}
+
+/* Description styling */
+.pricing-description {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #d6d6f5; /* Light purple text */
+}
+
+/* Price styling */
+.pricing-price {
+  font-size: 1.5rem;
+  color: #ff00ff; /* Neon purple */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Button styling */
+.learn-more-btn {
+  background: linear-gradient(45deg, #8000ff, #00ffff); /* Purple to Cyan */
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(128, 0, 255, 0.7);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Button hover effects */
+.learn-more-btn:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 30px rgba(128, 0, 255, 1);
+  background: linear-gradient(45deg, #00ffff, #8000ff); /* Cyan to Purple */
+}
+
 
 /************ Footer Css ************/
 .footer {
