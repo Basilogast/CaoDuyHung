@@ -1,47 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Pricing = () => {
+  // State to manage the visibility of details for all cards
+  const [showAllDetails, setShowAllDetails] = useState(false);
+
+  // Function to toggle the visibility of details for all cards
+  const toggleDetails = () => {
+    setShowAllDetails((prevState) => !prevState);
+  };
+
   return (
     <div className="pricing-container" id="pricing">
       <h2 className="pricing-header">Our services</h2>
       <div className="pricing-cards">
         {/* Pricing Card 1 */}
         <div className="pricing-card">
-          <h3 className="pricing-title">Static Portfolio</h3>
+          <h3 className="pricing-title">Basic Plan</h3>
           <p className="pricing-description">
-            An option for one to create a simple personal portfolio without blog
-            feature but still do the job.
+            This is the most affordable package, offering a clean and simple
+            portfolio website.
           </p>
-          <p className="pricing-price">$50 - $150</p>
-          <a href="#connect">
-            <button className="learn-more-btn">Learn More</button>
-          </a>
+          <button className="learn-more-btn" onClick={toggleDetails}>
+            {showAllDetails ? "Show Less" : "Show More"}
+          </button>
+          <div className={`pricing-details ${showAllDetails ? "show" : ""}`}>
+            <ul>
+              <li>Pre-designed templates</li>
+              <li>Single-page website</li>
+              <li>Essential sections</li>
+              <li>Social media integration</li>
+              <li>Simple contact form</li>
+            </ul>
+          </div>
         </div>
 
         {/* Pricing Card 2 */}
         <div className="pricing-card">
-          <h3 className="pricing-title">Dynamic Portfolio</h3>
+          <h3 className="pricing-title">Standard Plan</h3>
           <p className="pricing-description">
-            Great choice with blog function for those who wants to add more
-            project to their portfolio in the future.
+            Our most popular plan, allowing you to create a fully customized
+            portfolio with no limitations.
           </p>
-          <p className="pricing-price">$100 - $250</p>
-          <a href="#connect">
-            <button className="learn-more-btn">Learn More</button>
-          </a>
+          <button className="learn-more-btn" onClick={toggleDetails}>
+            {showAllDetails ? "Show Less" : "Show More"}
+          </button>
+          <div className={`pricing-details ${showAllDetails ? "show" : ""}`}>
+            <ul>
+              <li>Custom design template</li>
+              <li>Multi-page website</li>
+              <li>Additional sections</li>
+              <li>Custom animations and effects</li>
+              <li>Custom contact form</li>
+            </ul>
+          </div>
         </div>
 
         {/* Pricing Card 3 */}
         <div className="pricing-card">
-          <h3 className="pricing-title">Others</h3>
+          <h3 className="pricing-title">Dynamic Plan</h3>
           <p className="pricing-description">
-            For others type of website(ecom, blog, ...), please give me an email
-            for further instructions.
+            The most comprehensive package, allowing you to update your own
+            website by signing in and uploading new content.
           </p>
-          <p className="pricing-price">Contact for details</p>
-          <a href="#connect">
-            <button className="learn-more-btn">Learn More</button>
-          </a>
+          <button className="learn-more-btn" onClick={toggleDetails}>
+            {showAllDetails ? "Show Less" : "Show More"}
+          </button>
+          <div className={`pricing-details ${showAllDetails ? "show" : ""}`}>
+            <ul>
+              <li>All from the standard plan</li>
+              <li>Dynamic project cards</li>
+              <li>Custom backend integration</li>
+              <li>Allows you to update your own website</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
