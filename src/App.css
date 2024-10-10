@@ -1024,12 +1024,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .splide__arrow--prev {
   top: 50%;
-  left: -3.5rem;
+  left: -5rem !important;
 }
 
 .splide__arrow--next {
   top: 50%;
-  right: -3.5rem;
+  right: -5rem !important;
+}
+
+/* For medium-sized screens */
+@media (max-width: 992px) {
+  .splide__arrow--prev {
+    left: 0.5rem !important; /* Adjust distance for medium screens */
+  }
+
+  .splide__arrow--next {
+    right: 0.5rem !important; /* Adjust distance for medium screens */
+  }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .splide__arrow--prev {
+    left: 0.5rem !important; /* Closer for smaller screens */
+  }
+
+  .splide__arrow--next {
+    right: 0.5rem !important; /* Closer for smaller screens */
+  }
 }
 
 .splide__pagination__page {
@@ -1050,11 +1072,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .splide__arrow--prev {
-    left: 0.5rem;
+    left: 0.5rem !important;
   }
 
   .splide__arrow--next {
-    right: 0.5rem;
+    right: 0.5rem !important;
   }
 
   .slider-container .bottom-quote {

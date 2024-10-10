@@ -1,10 +1,11 @@
+import thienan from "../../assets/img/tes/thienan.jpg"
+
 export const reviews = [
   {
     id: 1,
-    image:
-      'https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    name: 'John Doe',
-    text: 'I was extremely pleased with the quality of the product. It exceeded my expectations and provided great value for the price.',
+    image: thienan,
+    name: 'Thien An',
+    text: 'My website serves as a valuable space to showcase past projects and is an excellent way for presenting my work to potential employers.',
   },
   {
     id: 2,
